@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="gift-box" onclick="openGift()">
+    <div class="gift-box">
         <div class="lid" id="lid">
             <div class="bow"></div>
         </div>
@@ -16,10 +16,11 @@
         <div class="envelope" id="envelope">Happy Birthday 🎉🎂🎁</div>
     </div>
     <script>
-        function openGift() {
-            document.getElementById('lid').classList.toggle('open');
-            document.getElementById('envelope').classList.toggle('show');
-        }
+        const box = document.querySelector('.gift-box');
+        box.addEventListener('click', () => {
+            document.getElementById("lid").classList.toggle('open');
+            document.getElementById("envelope").classList.toggle('show');
+        });
     </script>
 </body>
 </html>
