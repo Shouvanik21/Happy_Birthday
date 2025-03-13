@@ -82,7 +82,7 @@ body {
 .lid1.open {
   transform: translateX(-100px) translateY(90px) rotateZ(-90deg);
 }
-.bow {
+.bow1,.bow2,.bow3 {
   top: -20px;
   left: 50%;
   width: 60px;
